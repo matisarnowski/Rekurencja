@@ -7,48 +7,54 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        int a;
-        int n;
-        int i;
+        String a;
+        String n;
+        String i;
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Podaj liczbę całkowitą, przeprowadzimy dodawanie począwszy od tej liczby, aż do 1.");
         while (true) {
+
             try {
-                a = sc.nextInt();
-                Dodawanie dodaj = new Dodawanie(a);
-                System.out.printf("Wynik dodawania wszystkich liczb od: %d do 1, to: %d \n", dodaj.getA(), dodaj.dodawanieRekurencyjne(a));
+                a = sc.next();
+                int aa = Integer.parseInt(a);
+                Dodawanie dodaj = new Dodawanie(aa);
+                System.out.printf("Wynik dodawania wszystkich liczb od: %d do 1, to: %d \n", dodaj.getA(), dodaj.dodawanieRekurencyjne(aa));
                 break;
-            } catch (InputMismatchException e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Błąd! Wpisano nie poprawne znaki. ");
-                break;
+                System.out.println("Spróbuj ponownie. ");
             }
         }
 
         System.out.println("Podaj liczbę całkowitą, wyprowadzimy odpowiedni wyraz ciągu Fibonnaciego dla tej liczby.");
         while (true) {
+
             try {
-                n = sc.nextInt();
-                Fibonacci fib = new Fibonacci(n);
-                System.out.printf("%d -ty wyraz ciągu Fibonacciego, to: %d \n", fib.getN(), fib.liczWyraz(n));
+                n = sc.next();
+                int nn = Integer.parseInt(n);
+                Fibonacci fib = new Fibonacci(nn);
+                System.out.printf("%d -ty wyraz ciągu Fibonacciego, to: %d \n", fib.getN(), fib.liczWyraz(nn));
                 break;
-            } catch (InputMismatchException e) {
+            } catch (NumberFormatException ex) {
                 System.out.println("Błąd! Wpisano nie poprawne znaki. ");
-                break;
+                System.out.println("Spróbuj ponownie. ");
             }
         }
 
         System.out.println("Podaj liczbę całkowitą, policzymy z niej silnię.");
         while (true) {
+
             try {
-                i = sc.nextInt();
-                Silnia silnia = new Silnia(i);
-                System.out.printf("Silnia z: %d to: %d \n", silnia.getI(), silnia.liczSilnie(i));
+                i = sc.next();
+                int ii = Integer.parseInt(i);
+                Silnia silnia = new Silnia(ii);
+                System.out.printf("Silnia z: %d to: %d \n", silnia.getI(), silnia.liczSilnie(ii));
                 break;
-            } catch (InputMismatchException e) {
+            } catch (NumberFormatException exc) {
                 System.out.println("Błąd! Wpisano nie poprawne znaki. ");
-                break;
+                System.out.println("Spróbuj ponownie. ");
             }
         }
     }

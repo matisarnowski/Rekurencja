@@ -11,7 +11,7 @@ public class Fibonacci {
         this.start = 1;
     }
 
-    public int liczWyraz(int n) throws InputMismatchException {
+    public int liczWyraz(int n) {
         if (n == 1)
             return start;
         if (n == 2)

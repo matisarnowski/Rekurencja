@@ -11,7 +11,7 @@ public class Silnia {
         this.iloczyn = 1;
     }
 
-    public int liczSilnie(int i) throws InputMismatchException{
+    public int liczSilnie(int i) {
 
         iloczyn *= i;
         i -= 1;

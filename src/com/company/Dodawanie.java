@@ -11,7 +11,7 @@ public class Dodawanie {
         this.suma = 0;
     }
 
-    public int dodawanieRekurencyjne(int a) throws InputMismatchException {
+    public int dodawanieRekurencyjne(int a) {
 
         suma += a;
         a -= 1;
