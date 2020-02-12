@@ -17,7 +17,7 @@ public class Main {
         while (true) {
 
             try {
-                a = sc.next();
+                a = sc.nextLine();
                 int aa = Integer.parseInt(a);
                 Dodawanie dodaj = new Dodawanie(aa);
                 System.out.printf("Wynik dodawania wszystkich liczb od: %d do 1, to: %d \n", dodaj.getA(), dodaj.dodawanieRekurencyjne(aa));
@@ -32,7 +32,7 @@ public class Main {
         while (true) {
 
             try {
-                n = sc.next();
+                n = sc.nextLine();
                 int nn = Integer.parseInt(n);
                 Fibonacci fib = new Fibonacci(nn);
                 System.out.printf("%d -ty wyraz ciągu Fibonacciego, to: %d \n", fib.getN(), fib.liczWyraz(nn));
@@ -47,7 +47,7 @@ public class Main {
         while (true) {
 
             try {
-                i = sc.next();
+                i = sc.nextLine();
                 int ii = Integer.parseInt(i);
                 Silnia silnia = new Silnia(ii);
                 System.out.printf("Silnia z: %d to: %d \n", silnia.getI(), silnia.liczSilnie(ii));
