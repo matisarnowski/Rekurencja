@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Rekurencja:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Rekurencja_jar</output-path>
+    <root id="archive" name="Rekurencja.jar">
+      <element id="module-output" name="Rekurencja" />
+    </root>
+  </artifact>
+</component>
