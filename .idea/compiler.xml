@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Rekurencja" target="1.5" />
+      <module name="Rekurencja" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
